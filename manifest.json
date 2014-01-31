@@ -1,0 +1,43 @@
+{
+  "name": "E-com Lightbox",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Visualiza imagens anexadas no e-com em pop-ups",
+  "homepage_url": "http://intranet.tecsystem.info/ecom/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "*://intranet.tecsystem.info/ecom/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://intranet.tecsystem.info/ecom/*"
+      ],
+      "js": [
+        "src/inject/inject.js", 
+        "js/jquery-1.10.2.min.js",
+        "js/lightbox-2.6.min.js"
+      ],
+      "css": [
+        "css/lightbox.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+       "img/close.png",
+       "img/loading.gif",
+       "img/next.png",  
+       "img/prev.png"
+     ]
+}

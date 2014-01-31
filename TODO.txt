@@ -1,0 +1,11 @@
+[x] Erro "$ is not defined"
+[x] Ícones
+[x] Imagens com caminho relativo: http://stackoverflow.com/a/14974989
+[ ] Abrir outros tipos de arquivos: http://planetozh.com/projects/lightbox-clones/
+[ ] Melhorar performance
+[ ] Permitir download das imagens
+	Alternativas:
+	- Incluir o link na legenda da imagem (não suportado pelo lightbox)
+	- Clicar com o botão direito e "salvar como"
+	- Acessar pela guia "Anexos do e-com"
+[ ] Criar um bookmarklet ou portar a extensão para outros navegadores
