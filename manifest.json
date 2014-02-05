@@ -1,6 +1,6 @@
 {
   "name": "E-com Lightbox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Visualiza imagens anexadas no e-com em pop-ups",
   "homepage_url": "http://intranet.tecsystem.info/ecom/",
@@ -28,10 +28,14 @@
         "src/inject/inject.js", 
         "js/jquery-1.10.2.min.js",
         "js/jquery.mousewheel-3.0.6.pack.js",
-        "js/jquery.fancybox.pack.js"
+        "js/jquery.fancybox.pack.js",
+        "js/jquery.fancybox-buttons.js",
+        "js/jquery.fancybox-thumbs.js"
       ],
       "css": [
-        "css/jquery.fancybox.css"
+        "css/jquery.fancybox.css",
+        "css/jquery.fancybox-buttons.css",
+        "css/jquery.fancybox-thumbs.css"
       ]
     }
   ],
@@ -39,6 +43,7 @@
        "img/blank.gif",
        "img/fancybox_loading.gif",
        "img/fancybox_overlay.png",  
-       "img/fancybox_sprite.png"
+       "img/fancybox_sprite.png",
+       "img/fancybox_buttons.png"
      ]
 }

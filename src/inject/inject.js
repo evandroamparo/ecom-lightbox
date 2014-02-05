@@ -8,7 +8,19 @@ function init() {
       .fancybox({
         type: "image",
         beforeLoad: function() {
-            this.title = $(this.element).text();
+            this.title = '<a href="' + this.href + '">Baixar</a> ' + $(this.element).text();
+        },
+        loop: true,
+        padding: 0,
+        helpers : {
+          title : {
+            type: 'inside'
+          },
+          thumbs  : {
+            width : 50,
+            height  : 50
+          },
+          buttons : {}
         }
       });
   }
