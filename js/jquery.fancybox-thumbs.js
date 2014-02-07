@@ -108,7 +108,7 @@
 				}).attr('src', href)
 				  .click(function(e){
 					e.preventDefault();
-					$.fancybox.jumpto($(this).attr('data-fancyboxjumpto'));
+					$.fancybox.jumpto($(this).parent().attr('data-fancyboxjumpto'));
 				  });
 			});
 
