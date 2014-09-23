@@ -1,6 +1,6 @@
 {
   "name": "E-com Lightbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 2,
   "description": "Visualiza imagens anexadas no e-com em pop-ups",
   "homepage_url": "http://intranet.tecsystem.info/ecom/",
@@ -22,7 +22,9 @@
   "content_scripts": [
     {
       "matches": [
-        "*://intranet.tecsystem.info/ecom/*"
+        "*://intranet.tecsystem.info/ecom/*",
+        "*://192.168.0.253/ecom/*",
+        "*://189.42.207.228/ecom/*"
       ],
       "js": [
         "src/inject/inject.js", 
