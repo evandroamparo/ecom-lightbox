@@ -1,7 +1,7 @@
 function init() {
   if (window.jQuery) {
     var $links = $("a[href^='download.php'][target='_blank']").filter(function(index) {
-      return ($(this).text().match(/.*jpg|png|gif|bmp/i) != null)
+      return ($(this).text().match(/.*jp[e]?g|png|gif|bmp/i) != null)
     });
     $links
       .attr('rel', 'ecom-gallery')
